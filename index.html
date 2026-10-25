@@ -1,162 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./Cake.css" />
+    <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-    <div class="nav">
+    <!--Navbar-->
+    <div class="navbar">
+      <div>
+        <img width="200px" src="./photo/Logo.jpg" alt="" />
+      </div>
+      <div class="nav-list">
         <ul>
-          <li><img src="/photo/Logo.jpg" alt="" /></li>
-          <li><a class="home" href="./Cake.html">Home</a></li>
-          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Shop</a></li>
           <li>
-            <div class="dropdown">
-              <button class="dropbtn"><b>Menu ▼</b></button>
-              <div class="dropdown-content">
-                <a href="./menu-cake.html">Cakes</a>
-                <a href="menu-cupcake.html">Cup Cakes</a>
-                <a href="./menu-rollcake.html">Cakes Roll</a>
-              </div>
-            </div>
+            <form action="">
+              <select name="" id="">
+                <option value="">
+                  Menu<i class="fa-solid fa-caret-down"></i>
+                </option>
+                <option value="">Cake</option>
+                <option value="">Cake Roll</option>
+                <option value="">Cup Cake</option>
+              </select>
+            </form>
           </li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./AboutUs.html">About Us</a></li>
-          <li><a href="./cake-login.html"><i id="user" class="fa-solid fa-user"></i></a></li>
-          <li><a href="./Notification.html"><i class="fa-solid fa-bell"></i></a></li>
-          <li><a href="./AddToCard.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-list">
+        <ul class="icon-list">
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+          </li>
+          <li>
+            <a class="icon-menu" href=""><i class="fa-solid fa-bars"></i></a>
+          </li>
         </ul>
       </div>
     </div>
-    <div data-aos="fade-right" data-aos-duration="1000" class="banner">
-      <img src="https://i.pinimg.com/736x/8d/ee/3d/8dee3d58aa2861c46c9db655ebb32e9a.jpg" alt="">
-      <div data-aos="zoom-in" class="main-text-cake">
+
+    <!--Banner-->
+    <div class="banner">
+      <div class="txt-banner">
         <h1>Welcome To</h1>
         <h1 class="title">Honey Cake!</h1>
         <p>Soft, Sweet, and yummy until the last of piece</p>
-        <a href="./menu-cake.html"><input class="btn-order" type="button" value="Order Now"></a>
-      </div>
-      <div class="cake-banner roll-auto">
-        <img src="https://i.pinimg.com/736x/94/3a/ed/943aed6061642c92af43ddf09b44ce4e.jpg" alt="">
+        <div>
+          <a href="./menu-cake.html"
+            ><input class="btn-order" type="button" value="Order Now"
+          /></a>
+        </div>
       </div>
     </div>
-    <div class="trending">
-      <div class="signature">
-        <h2>Signature</h2>
-      </div>
-      <div class="list-menu">
-        <div data-aos="zoom-in-down" data-aos-duration="3000" class="cirle-list">
-          <img src="https://i.pinimg.com/736x/72/bb/51/72bb51b23cf78b03d532234af0e6e9ae.jpg" alt="">
-          <p>Birthday Cake</p>
+
+    <!--signature-->
+    <div class="sig-sec">
+      <h2>Signature</h2>
+      <div class="menu-sig">
+        <div>
+          <img src="./photo/bdCake.png" alt="" />
+          <p>Birthday cake</p>
         </div>
-        <div data-aos="zoom-in-down" data-aos-duration="3000" class="cirle-list">
-          <img src="https://i.pinimg.com/736x/30/b3/be/30b3be86d7c68ec40f47794913b1c293.jpg" alt="">
+        <div>
+          <img src="./photo/cakeRoll.png" alt="" />
           <p>Cake Roll</p>
         </div>
-        <div data-aos="zoom-in-down" data-aos-duration="3000" class="cirle-list">
-          <img src="https://i.pinimg.com/1200x/32/10/c5/3210c581561ed307100d8a2753c9457c.jpg" alt="">
+        <div>
+          <img src="./photo/cupCake.png" alt="" />
           <p>Cup Cake</p>
         </div>
       </div>
     </div>
-    <div data-aos="flip-right" data-aos-duration="3000" class="discount">
-      <div class="img">
-        <img src="https://i.pinimg.com/1200x/ec/36/c0/ec36c0b58e99cd4a4473d681f7a24168.jpg" alt="">
+
+    <!--Discount Banner-->
+    <div class="dis-part">
+      <div class="txt-dis">
+        <h3>50% OFF ROLL CAKE! 🍰✨</h3>
+        <p>
+          Indulge in our soft, fluffy, and deliciously creamy roll cakes at half
+          the price! Don't miss out on this sweet deal—grab yours today and
+          treat yourself!
+        </p>
       </div>
-      <div class="card-dis">
-        <p>Honey Cake Collection</p>
-        <span>20% OFF</span><br>
-        <!-- <a href="./menu-cake.html"><input class="btn-order" type="button" value="Order Now"></a> -->
+      <div class="img-dis"></div>
+    </div>
+
+    <!--List-Menu-->
+    <div class="menu-cake">
+      <div class="sm-parts">
+        <div class="box-sm-list">
+          <div>
+            <img src="./photo/list1.png" alt="" />
+            <div class="txt-list">
+              <h3>Chocolate</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+            </div>
+          </div>
+          <div class="cart-price">$25</div>
+        </div>
+        <div class="box-sm-list">
+          <div>
+            <img src="./photo/list2.png" alt="" />
+            <div class="txt-list">
+              <h3>Strawberry Cake Roll</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+            </div>
+          </div>
+          <div class="cart-price">$5</div>
+        </div>
+        <div class="box-sm-list">
+          <div>
+            <img src="./photo/list3.png" alt="" />
+            <div class="txt-list">
+              <h3>Cup Cakes</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+            </div>
+          </div>
+          <div class="cart-price">$3</div>
+        </div>
+        <div class="box-sm-list">
+          <div>
+            <img src="./photo/list4.png" alt="" />
+            <div class="txt-list">
+              <h3>Strawberry Prosecco Cake</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+            </div>
+          </div>
+          <div class="cart-price">$25</div>
+        </div>
       </div>
     </div>
-    <div class="detail-menu">
-      <div data-aos="fade-up"
-     data-aos-duration="3000" class="card">
-        <div>
-          <a href="/Buy-now.html"><img src="https://i.pinimg.com/1200x/69/b6/36/69b636605f8ad7c7e8c923d5dea203bb.jpg" alt="">
-          <span>$25</span></a>
-        </div>
-        <div>
-          <h3>Chocolate Strawberry <br>Oreo Cake</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div>
-      </div>
-      <div data-aos="fade-up"
-     data-aos-duration="3000" class="card">
-         <div>
-          <a href="/Buy-now.html"><img src="https://i.pinimg.com/1200x/22/85/13/2285133ca294e46a173a69728e216444.jpg" alt="">
-          <span>$25</span></a>
-        </div>
-        <div>
-          <h3>Strawberry Prosecco Cake</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div>
-      </div>
-      <div data-aos="fade-up"
-     data-aos-duration="3000" class="card">
-         <div>
-          <a href="/Buy-now.html"><img src="https://i.pinimg.com/1200x/04/d4/5e/04d45ef007d121d22f6d7be2cc16c370.jpg" alt="">
-          <span>$25</span></a>
-        </div>
-        <div>
-          <h3>Chocolate Strawberry CupCakes</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div>
-      </div>
-      <div data-aos="fade-up"
-     data-aos-duration="3000" class="card">
-         <div>
-          <a href="/Buy-now.html"><img src="https://i.pinimg.com/1200x/c4/c4/45/c4c4454f8a9830edaf94865ef0931bb5.jpg" alt="">
-          <span>$25</span></a>
-        </div>
-        <div>
-          <h3>Fresh Strawberry Cake</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
+
+    <!--Footer-->
+    <footer>
       <div>
-        <img src="/photo/Logo.jpg" alt="">
+        <img src="./photo/Logo.jpg" alt="" />
         <h3>Honey Cake</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor
+        </p>
       </div>
       <div>
-        <h2><u>Navigation</u></h2>
-        <ul>
-          <li>Home</li>
-          <li>Shop</li>
-          <li>Menu</li>
-          <li>Contact</li>
-          <li>About Us</li>
+        <h3><u>Navigation</u></h3>
+        <ul class="list-footer">
+          <li><a href="">Home</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About Us</a></li>
         </ul>
       </div>
       <div>
-        <h2><u>Furture Links</u></h2>
-        <ul>
-          <li>Terms & Condition</li>
-          <li>News</li>
-          <li>learning</li>
+        <h3><u>Furture Links</u></h3>
+        <ul class="list-footer">
+          <li><a href="">Terms & Condition</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">learning</a></li>
         </ul>
       </div>
-      <div class="local">
-        <h2><u>Get In Toch</u></h2>
-        <p><i class="fa-solid fa-location-dot"></i>Samdach Sothearos Blvd (Stree 3), Phnom Penh, Cambodia</p>
+      <div>
+        <h3><u>Get In Toch</u></h3>
+        <p>
+          <i class="fa-solid fa-location-dot"></i>Samdach Sothearos Blvd (Stree
+          3), Phnom Penh, Cambodia
+        </p>
         <p><i class="fa-solid fa-phone"></i>+855 12 458 788</p>
         <p><i class="fa-solid fa-envelope"></i>Honey-Cake@gmail.com</p>
       </div>
-    </div>
-    <script>
-      AOS.init();
-    </script>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Noto+Serif+Khmer:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Battambang:wght@100;300;400;700;900&family=Jost:ital,wght@0,100..900;1,100..900&family=Koulen&family=Noto+Serif+Khmer:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 130px;
+  background-color: palevioletred;
+  padding-inline: 80px;
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar div img {
+  width: 127px;
+  height: 127px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar .nav-list ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .nav-list .icon-list {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.navbar .nav-list ul li {
+  list-style-type: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar .nav-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .icon-menu {
+  display: none;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .nav-list ul li select {
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: palevioletred;
+  color: white;
+  border: none;
+}
+
+.navbar .nav-list ul li a:hover,
+.navbar .nav-list ul li select:hover {
+  color: black;
+}
+
+/* Banner parts */
+.banner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 100vh;
+  background-image: url("./photo/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner .txt-banner {
+  position: absolute;
+  top: 27%;
+  left: 17%;
+}
+
+.banner .txt-banner h1 {
+  color: white;
+  font-size: 70px;
+}
+
+.banner .txt-banner p {
+  color: white;
+  font-size: 28px;
+  margin-top: 7px;
+}
+
+.btn-order {
+  background-color: rgb(221, 81, 128);
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-order:hover {
+  background-color: palevioletred;
+  color: black;
+}
+
+/* Signature parts */
+.sig-sec {
+  width: 55%;
+  margin: auto;
+}
+
+.sig-sec h2 {
+  margin-top: 8%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.sig-sec .menu-sig {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 8%;
+}
+
+.menu-sig div img {
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu-sig div p {
+  font-size: 35px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Banner Discount parts */
+.dis-part {
+  width: 85%;
+  margin: auto;
+  margin-block: 5%;
+  background-color: palevioletred;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dis-part .img-dis {
+  height: 290px;
+  background: url("./photo/dis.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.dis-part .txt-dis {
+  padding: 50px;
+}
+
+.dis-part .txt-dis h3 {
+  font-size: 40px;
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+}
+
+.dis-part .txt-dis p {
+  margin-top: 15px;
+  font-size: 25px;
+  color: white;
+}
+
+/* List menu parts */
+.menu-cake {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.menu-cake .sm-parts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.sm-parts .box-sm-list {
+  position: relative;
+}
+
+.sm-parts .box-sm-list .cart-price {
+  width: 25%;
+  position: absolute;
+  padding: 20px;
+  background-color: palevioletred;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 20px;
+  top: 10%;
+  left: 70%;
+  text-align: center;
+}
+
+.sm-parts .box-sm-list div {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px 4px rgba(140, 140, 140, 0.665);
+}
+
+.sm-parts .box-sm-list div:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.276);
+}
+
+.sm-parts .box-sm-list div img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.box-sm-list div .txt-list {
+  height: 200px;
+  padding: 15px;
+  border-radius: 0%;
+}
+
+.box-sm-list div .txt-list h3 {
+  font-size: 25px;
+  margin-block: 15px;
+}
+
+.box-sm-list div .txt-list p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: palevioletred;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+footer div img {
+  width: 50%;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer div h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+footer div p {
+  font-size: 22px;
+  margin: 5px;
+}
+
+footer div .list-footer a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+footer div .list-footer li {
+  list-style: none;
+  margin: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1324px) {
+  .navbar .nav-list ul {
+    display: none;
+  }
+
+  .navbar .icon-menu {
+    display: block;
+  }
+
+  .menu-cake .sm-parts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sig-sec {
+    width: 80%;
+  }
+
+  .sig-sec .menu-sig {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dis-part {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer div img {
+    width: 35%;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-cake .sm-parts,
+  .sig-sec .menu-sig {
+    grid-template-columns: 1fr;
+  }
+
+  .banner .txt-banner h1 {
+    font-size: 40px;
+  }
+
+  .banner .txt-banner p {
+    font-size: 18px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  footer div img {
+    width: 50%;
+  }
+}
